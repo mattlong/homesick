@@ -1,0 +1,7 @@
+[user]
+        name = Matt Long
+        email = matt@crocodoc.com
+[color]
+        ui = true
+[core]
+        editor = vim
