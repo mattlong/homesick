@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/ubuntu/domains/fat/myproject/templates/emails/auto-response-licensing'
+let g:netrw_dirhist_2='/home/ubuntu/repos/puppet/shadow/etc/puppet/modules/crocodoc/files/devmachine'
+let g:netrw_dirhist_3='/home/ubuntu/domains/crocodoc/crocodocweb/docviewer/static/core/_scripts/annotations'
