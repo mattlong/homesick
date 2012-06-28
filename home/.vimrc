@@ -1,5 +1,6 @@
 :nmap ; :
 :set rnu " Show relative line numbers
+:set cursorline " highlight current line
 
 "" command-t
 let mapleader = ','
