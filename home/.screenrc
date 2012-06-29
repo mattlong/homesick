@@ -1,2 +1,5 @@
-#make Ctrl+b escape instead of Ctrl+a
+#make Ctrl+t escape
 escape ^Tt
+
+#let Ctrl+a do it's default thing
+bindkey "^A"
