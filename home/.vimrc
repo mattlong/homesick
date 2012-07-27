@@ -2,11 +2,21 @@
 :set rnu " Show relative line numbers
 :set cursorline " highlight current line
 
-"" command-t
+call pathogen#infect()
+
 let mapleader = ','
-let g:CommandTMaxFiles=20000
-let g:CommandTMaxHeight = 15
-set wildignore+=*.o,*.obj,.git,*.pyc
+
+"" CtrlP
+:map <leader>t <c-p>
+let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*.so,*.swp,*.o,*.obj,.git,*.pyc
+
+"" command-t
+"let mapleader = ','
+"let g:CommandTMaxFiles=20000
+"let g:CommandTMaxHeight = 15
+"set wildignore+=*.o,*.obj,.git,*.pyc
 
 set nocompatible
 syntax enable
