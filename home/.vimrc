@@ -10,6 +10,7 @@ let mapleader = ','
 :map <leader>t <c-p>
 let g:ctrlp_map = '<c-p>'
 "let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = '0' "'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.o,*.obj,.git,*.pyc
 
 "" command-t
