@@ -6,6 +6,8 @@ call pathogen#infect()
 
 let mapleader = ','
 
+let g:omni_sql_no_default_maps = 1
+
 "" CtrlP
 :map <leader>t <c-p>
 let g:ctrlp_map = '<c-p>'
