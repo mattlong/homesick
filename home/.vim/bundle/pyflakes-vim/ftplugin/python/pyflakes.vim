@@ -160,8 +160,9 @@ endif
 " Hook common text manipulation commands to update PyFlakes
 "   TODO: is there a more general "text op" autocommand we could register
 "   for here?
-noremap <buffer><silent> dd dd:PyflakesUpdate<CR>
-noremap <buffer><silent> dw dw:PyflakesUpdate<CR>
+" MATT: removed these two lines since they screw with deleting things visually
+"noremap <buffer><silent> dd dd:PyflakesUpdate<CR>
+"noremap <buffer><silent> dw dw:PyflakesUpdate<CR>
 noremap <buffer><silent> u u:PyflakesUpdate<CR>
 noremap <buffer><silent> <C-R> <C-R>:PyflakesUpdate<CR>
 
