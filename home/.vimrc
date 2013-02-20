@@ -28,6 +28,7 @@ call pathogen#infect()
 let mapleader = ','
 let g:ctrlp_map = '<leader>t'
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_max_height = 30
 set wildignore+=*/tmp/*,*.so,*.swp,*.o,*.obj,.git,*.pyc
 
 
