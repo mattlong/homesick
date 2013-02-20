@@ -10,15 +10,14 @@ set laststatus=2                " show status line (0 - never, 1 - default, 2 - 
 set rnu                         " Show relative line numbers
 set cursorline                  " highlight current line
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
-    set t_Co=256                " number of colors to use
     colorscheme xoria256        " which colorscheme to use
 endif
 
 
 "" Key Mappings
-nmap ; :    " incase you miss that shift key
-"nmap j gj  " handle line wraps more sanely
-"nmap k gk  " handle line wraps more sanely
+nmap ; :
+nnoremap j gj
+nnoremap k gk
 
 
 "" Pathogen
