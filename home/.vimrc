@@ -9,7 +9,7 @@ set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]    "status line
 set laststatus=2                " show status line (0 - never, 1 - default, 2 - always)
 set rnu                         " Show relative line numbers
 set cursorline                  " highlight current line
-if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
+if has("gui_macvim") || $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
     colorscheme xoria256        " which colorscheme to use
 endif
 
