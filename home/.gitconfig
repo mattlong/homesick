@@ -1,7 +1,9 @@
 [user]
-        name = Matt Long
-        email = matt@crocodoc.com
+    name = Matt Long
+    email = matt@crocodoc.com
 [color]
-        ui = true
+    ui = true
 [core]
-        editor = vim
+    editor = vim
+[branch]
+    autosetuprebase = always
