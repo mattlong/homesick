@@ -1,0 +1,16 @@
+selectp -t 0
+splitw -h
+splitw -h
+select-layout even-horizontal
+
+selectp -t 0
+send-keys "cd ~/domains/crocodoc/site" C-m
+send-keys "./appserver.sh" C-m
+
+selectp -t 1
+send-keys "cd ~/domains/crocodoc/site" C-m
+send-keys "./dispatcher.sh" C-m
+
+selectp -t 2
+send-keys "cd ~/domains/crocodoc/site" C-m
+send-keys "./worker.sh" C-m
