@@ -7,7 +7,13 @@ set hidden                      " allow unsaved files to be put in background
 filetype plugin indent on       " load file type plugins + indentation
 set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]    "status line format
 set laststatus=2                " show status line (0 - never, 1 - default, 2 - always)
-set rnu                         " Show relative line numbers
+
+if v:version >= 703
+    set relativenumber          " Show relative line numbers
+else
+    set number                  " Show absolute line numbers
+endif
+
 set cursorline                  " highlight current line
 if has("gui_macvim") || $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
     colorscheme xoria256        " which colorscheme to use
