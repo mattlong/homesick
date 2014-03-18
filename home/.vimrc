@@ -53,3 +53,5 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Plugin Fixes
 let g:omni_sql_no_default_maps = 1 " disable SQL syntax keyboard shortcuts
+
+map <leader>gt :call TimeLapse() <cr>
