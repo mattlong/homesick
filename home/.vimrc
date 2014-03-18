@@ -1,3 +1,4 @@
+
 "" General
 set nocompatible                " break vi compatibility
 syntax enable                   " enable syntax highlighting
@@ -9,9 +10,12 @@ set stl=%f\ %m\ %r\ Line:%l/%L[%p%%]\ Col:%c\ Buf:%n\ [%b][0x%B]    "status line
 set laststatus=2                " show status line (0 - never, 1 - default, 2 - always)
 
 if v:version >= 703
-    set relativenumber          " Show relative line numbers
-else
-    set number                  " Show absolute line numbers
+    " relative line numbers
+    set rnu
+    au InsertEnter * :set nu
+    au InsertLeave * :set rnu
+    au FocusLost * :set nu
+    au FocusGained * :set rnu
 endif
 
 set cursorline                  " highlight current line
@@ -54,4 +58,8 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Plugin Fixes
 let g:omni_sql_no_default_maps = 1 " disable SQL syntax keyboard shortcuts
 
+"" git blame history
 map <leader>gt :call TimeLapse() <cr>
+
+"" vim-gitgutter
+let g:gitgutter_realtime = 0

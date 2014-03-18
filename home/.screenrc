@@ -1,5 +1,5 @@
 #make Ctrl+t escape
-escape ^Tt
+escape ^Ff
 
 #let Ctrl+a do it's default thing
 bindkey "^A"
